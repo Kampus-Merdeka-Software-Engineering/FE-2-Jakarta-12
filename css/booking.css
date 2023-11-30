@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 90%;
+  margin: auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*-------------head--------- */
+.head {
+  height: 10vh;
+  line-height: 10vh;
+}
+
+.head i {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  line-height: 30px;
+  background: #c3a05a;
+  text-align: center;
+  color: #faf3e7;
+}
+
+.head img {
+  margin-top: 10px;
+}
+
+/*-------------head--------- */
+/*-------------header--------- */
+header {
+  background: #c3a05a;
+  padding: 15px 0 15px 0;
+  color: #fdf7f2;
+}
+
+header ul {
+  padding: 0 20px 0 0;
+}
+
+header li {
+  margin-right: 30px;
+}
+
+header ul li a {
+  font-size: 15px;
+  color: #fdf7f2;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+header ul li a:hover {
+  color: #000;
+}
+
+header .head_contact {
+  position: relative;
+}
+
+header .head_contact i {
+  position: absolute;
+  top: -29px;
+  left: -70%;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  background: #c3a05a;
+  color: #fdf7f2;
+  border-radius: 50%;
+  transform: rotate(-45deg);
+  border: 5px solid #ece3d2;
+  font-size: 30px;
+}
+
+header .sticky_logo {
+  display: none;
+}
+
+header.sticky .sticky_logo {
+  display: block;
+  width: 50px;
+  height: 50px;
+  margin-top: -10px;
+}
+
+header.sticky {
+  z-index: 9999;
+  position: fixed;
+  width: 100%;
+  background: #313538;
+  transition: 0.5s;
+  height: 12vh;
+  transition: 0.5s;
+  top: 0;
+  padding: 30px 0 0 0;
+}
+
+header.sticky ul li a {
+  color: white;
+}
+
+/* Add this at the end of your existing CSS */
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .header {
+    padding: 30px; /* Decrease padding for header on smaller screens */
+  }
+
+  .gambar {
+    height: 200px; /* Adjust the height of the image container for smaller screens */
+  }
+
+  .paragraf,
+  .content,
+  .kiri,
+  .kanan {
+    padding: 20px; /* Decrease padding for paragraphs and content on smaller screens */
+  }
+
+  .fotoblog {
+    width: 100%; /* Make the images full-width on smaller screens */
+  }
+
+  h3 {
+    font-size: 20px; /* Adjust heading font size for smaller screens */
+  }
+
+  .footer {
+    padding: 5px; /* Decrease padding for the footer on smaller screens */
+  }
+}
+
+:root {
+  --primary: #24416b;
+  --secondary: #0077b6;
+  --black: #333;
+  --white: #fff;
+  --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 0.5rem;
+}
+
+section {
+  padding: 5rem 7%;
+}
+
+.heading {
+  font-size: 4rem;
+  color: var(--primary);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  margin-bottom: 3rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 1rem 3rem;
+  background: var(--primary);
+  border-radius: 0.5rem;
+  color: var(--white);
+  font-size: 1.7rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--secondary);
+}
+
+/* reservation */
+
+.reservation form {
+  padding: 2rem;
+  border: 0.2rem solid rgba(0, 0, 0, 0.1);
+  border-radius: 1.5rem;
+}
+
+.reservation form .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.reservation form .container .box {
+  flex: 1 1 40rem;
+}
+
+.reservation form .container .box p {
+  font-size: 1.8rem;
+  color: var(--primary);
+}
+
+.reservation form .container .box .input {
+  font-size: 1.8rem;
+  width: 100%;
+  padding: 1rem 0;
+  margin: 1rem 0;
+  border-bottom: 0.2rem solid rgba(0, 0, 0, 0.1);
+  color: var(--black);
+}
+
+/* end */

@@ -1,0 +1,337 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(206, 34%, 20%);
+}
+
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 960px;
+  margin: 60px auto;
+  background-color: #fff;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.flex {
+  display: flex;
+}
+
+.containernav {
+  max-width: 90%;
+  margin: auto;
+}
+.flex1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*-------------head--------- */
+.head {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+}
+
+.head i {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  line-height: 30px;
+  background: #c3a05a;
+  text-align: center;
+  color: #faf3e7;
+}
+
+.head img {
+  margin-top: 10px;
+}
+
+/*-------------head--------- */
+/*-------------header--------- */
+.header {
+  background: hsl(214, 57%, 51%);
+  padding: 50px;
+  color: #fdf7f2;
+}
+
+.header p {
+  margin-top: 10px;
+}
+
+header .head_contact {
+  position: relative;
+}
+
+header .sticky_logo {
+  display: none;
+}
+
+header.sticky .sticky_logo {
+  display: block;
+  width: 70px;
+  height: 70px;
+  margin-top: -20px;
+}
+
+header.sticky {
+  z-index: 9999;
+  position: fixed;
+  width: 100%;
+  transition: 0.5s;
+  height: 50vh; /* Ubah tinggi navbar */
+  transition: 0.5s;
+  top: 0;
+  padding: 30px 0 0 0;
+}
+
+/* Existing CSS */
+
+/* Add this at the end of your existing CSS */
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 14px; /* Adjust font size for smaller screens */
+  }
+
+  .paragraf,
+  .content,
+  .kiri,
+  .kanan {
+    padding: 20px; /* Decrease padding for paragraphs and content on smaller screens */
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+  }
+
+  .fotoblog {
+    width: 100%;
+    height: 100%; /* Ensure the image takes 100% of the container's height */
+    object-fit: contain; /* Maintain aspect ratio and fit the image within the container */
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+  }
+  /* Optional: Center the text in the kiri and kanan sections */
+  .kiri p,
+  .kanan p {
+    text-align: center;
+    font-family: 'Poppins', serif;
+    margin-bottom: 100px;
+  }
+
+  h3 {
+    font-size: 20px; /* Adjust heading font size for smaller screens */
+  }
+
+  .footer {
+    padding: 5px; /* Decrease padding for the footer on smaller screens */
+  }
+
+  /* Adjust the position of the navigation bar */
+  .head {
+    height: 60px; /* Adjust the height of the navbar */
+    position: fixed;
+    background-color: hsl(218, 70%, 18%);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    z-index: 9999;
+    transition: top 0.3s;
+  }
+
+  /* Style adjustments for the navigation container */
+  .containernav {
+    flex-direction: row; /* Align the items horizontally */
+    justify-content: space-between; /* Add space between the logo and social icons */
+  }
+
+  /* Style adjustments for the logo and social icons */
+  .head img {
+    margin-top: 10px;
+    max-width: 75%; /* Adjust the logo size for smaller screens */
+  }
+
+  .scoial {
+    margin-top: 20px;
+  }
+
+  /* Style adjustments for the social icons */
+  .head i {
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    margin: 0 5px; /* Add some spacing between social icons */
+  }
+
+  /* Adjust the position of the header content */
+  .header {
+    padding: 50px 0; /* Add padding to the header content */
+  }
+
+  .gambar {
+    height: 200px;
+    background-size: contain;
+    background-position: center center; /* Center the background image */
+  }
+  .image-container img {
+    display: block;
+    margin: auto;
+    max-width: 100%; /* Ensure the image doesn't overflow its container */
+    max-height: 100%; /* Ensure the image doesn't overflow its container */
+  }
+
+  .kiri,
+  .kanan {
+    width: 100%; /* Make columns full-width on smaller screens */
+    float: none;
+    margin-bottom: 20px; /* Add some space between columns on smaller screens */
+  }
+
+  .column-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .image-container {
+    margin-bottom: 3px; /* Add some spacing between images on smaller screens */
+  }
+}
+
+.image-container {
+  overflow: hidden;
+  border-radius: 10px; /* Sesuaikan dengan seberapa melengkung yang Anda inginkan */
+}
+
+.image-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.gambar {
+  height: 400px;
+  background-image: url('../image/gym.png');
+  background-size: cover;
+}
+
+h1 {
+  color: #c3a05a;
+  font-family: 'Poppins', serif;
+}
+
+h2 {
+  text-align: center;
+  color: #c3a05a;
+  font-family: 'Poppins', serif;
+}
+
+hr {
+  width: 300px;
+  border-top: 3px solid hsl(218, 70%, 18%);
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.paragraf {
+  padding: 50px;
+}
+.paragraf p {
+  margin-bottom: 10px;
+  font-family: 'Poppins', serif;
+}
+.content {
+  padding: 50px;
+  margin-top: -20px;
+}
+
+.fotoblog {
+  width: 300px;
+  height: 180px;
+  margin-left: 3px;
+}
+
+.kiri {
+  width: 400px;
+  float: left;
+  background-color: hsl(214, 57%, 51%);
+  padding: 20px;
+  box-sizing: border-box;
+  color: #fdf7f2;
+}
+.kanan {
+  width: 400px;
+  float: right;
+  background-color: hsl(214, 57%, 51%);
+  padding: 20px;
+  box-sizing: border-box;
+  color: #fdf7f2;
+}
+
+h3 {
+  text-align: center;
+  padding: 20px;
+  color: #c3a05a;
+  font-family: 'Poppins', serif;
+}
+
+.cf:before,
+.cf:after {
+  content: ' '; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+  zoom: 1;
+}
+
+.footer {
+  background-color: hsl(206, 34%, 20%);
+  padding: 10px;
+}
+
+.footer .copy {
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+}
+
+.fadeIn {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.visible {
+  opacity: 1;
+}
