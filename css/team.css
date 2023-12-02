@@ -1,0 +1,92 @@
+.tim-kami h1 {
+    font-size: 32px;
+    font-family: serif;
+    color: #15426b;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    padding: 80px;
+    padding-top: 32px;
+    padding-bottom: 20px;
+    position: relative; 
+    
+  }
+  .tim-kami h1::after {
+    content: "";
+    display: block;
+    width: 75px;
+    height: 5px;
+    border-radius: 50px;
+    background-color: hsl(218, 70%, 18%);
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 68px;
+    margin: 50px;
+  }
+  .grid img {
+    padding-left: 12px;
+    padding-top: 9px;
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+  }
+  img {
+    object-fit: cover;
+  }
+  .grid > article {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+    border-radius: 8px;
+    text-align: center;
+    background: #fff;
+    width: 280px;
+    height: 410px;
+    transition: 0.2s transform;
+    cursor: pointer;
+  }
+  .grid > article img {
+    padding-left: 12px;
+    padding-top: 15px;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+  }
+  .grid > article:hover {
+    transform: scale(1.1);
+  }
+  .grid p {
+    color: #000;
+    font-size: 15px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    text-align: center;
+  }
+  .grid h2 {
+    color: #627795;
+    font-size: 18px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    text-align: center;
+    padding: 10px;
+  }
+  .grid button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #c3a05a;
+    border-radius: 20px;
+    text-align: center;
+    cursor: pointer;
+    width: 80%;
+  }
+  .grid button:hover {
+    background-color: #745a28;
+  }
