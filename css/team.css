@@ -24,7 +24,7 @@
     left: 0;
     right: 0;
   }
-  .grid {
+  .grid-team {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -32,7 +32,7 @@
     gap: 68px;
     margin: 50px;
   }
-  .grid img {
+  .grid-team img {
     padding-left: 12px;
     padding-top: 9px;
     width: 250px;
@@ -42,7 +42,7 @@
   img {
     object-fit: cover;
   }
-  .grid > article {
+  .grid-team > article {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
     border-radius: 8px;
     text-align: center;
@@ -52,30 +52,30 @@
     transition: 0.2s transform;
     cursor: pointer;
   }
-  .grid > article img {
+  .grid-team > article img {
     padding-left: 12px;
     padding-top: 15px;
     width: 200px;
     height: 200px;
     border-radius: 10px;
   }
-  .grid > article:hover {
+  .grid-team > article:hover {
     transform: scale(1.1);
   }
-  .grid p {
+  .grid-team p {
     color: #000;
     font-size: 15px;
     font-family: "Plus Jakarta Sans", sans-serif;
     text-align: center;
   }
-  .grid h2 {
+  .grid-team h2 {
     color: #627795;
     font-size: 18px;
     font-family: "Plus Jakarta Sans", sans-serif;
     text-align: center;
     padding: 10px;
   }
-  .grid button {
+  .grid-team button {
     border: none;
     outline: 0;
     display: inline-block;
@@ -87,6 +87,6 @@
     cursor: pointer;
     width: 80%;
   }
-  .grid button:hover {
+  .grid-team button:hover {
     background-color: #745a28;
   }
