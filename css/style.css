@@ -111,6 +111,10 @@ header {
   align-items: center;
 }
 
+.navbar .nav-menu a:hover{
+  color: #c3a05a;
+}
+
 .hamburger {
   display: none;
 }
@@ -251,7 +255,7 @@ header.sticky ul li a {
   }
 
   header li {
-    margin: 2.5rem 0;
+    margin: 0.5rem 0;
   }
 
   .hamburger {
@@ -272,9 +276,12 @@ header.sticky ul li a {
   }
 }
 
+.active-nav .nav-menu {
+  color: #c3a05a;
+}
 .active-nav {
-  color: #d7cbcb; /* Ubah warna teks sesuai keinginan Anda */
-  text-decoration: underline; /* Tambahkan garis bawah */
+  color: #c3a05a; /* Ubah warna teks sesuai keinginan Anda */
+  border-bottom: 3px solid #c3a05a; /* Tambahkan garis bawah */
 }
 /*------------home------------*/
 .grid {
