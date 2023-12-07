@@ -26,10 +26,11 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-
-const baseUrl = "http://localhost:4000"
+// fath api beckend
+const baseUrl = "https://be-2-jakarta-12-production.up.railway.app"
 const apiRoutes = {
-    roomList: `${baseUrl}/room/list`,
+    roomList: `${baseUrl}/room`,
+    booking: `${baseUrl}/booking`,
 } 
 const loadRoomList = () => {
     fetch(apiRoutes.roomList)
