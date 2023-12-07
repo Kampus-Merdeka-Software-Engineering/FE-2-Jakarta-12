@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
 const baseUrl = "https://be-2-jakarta-12-production.up.railway.app"
 const apiRoutes = {
     roomList: `${baseUrl}/room`,
-    booking: `${baseUrl}/booking`,
+    booking: `${baseUrl}/booking`
 } 
 const loadRoomList = () => {
     fetch(apiRoutes.roomList)
