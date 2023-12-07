@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', function() {
         type_room: type_room
       };
 
-      // Example API URL (replace with your actual API endpoint)
+      // URL api backend
       var apiUrl = 'https://be-2-jakarta-12-production.up.railway.app';
       var apiRoutes = {
         roomList: `${apiUrl}/booking`,
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return response.json();
       })
       .then(data => {
-        // Process the API response (customize this part based on your API response)
+        // Process the API response 
         var bookingDetails = `
           <h2>Booking Details</h2>
           <p>Name: ${data.name}</p>
@@ -64,6 +64,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Display the booking details in the container
         bookingDetailsContainer.innerHTML = bookingDetails;
+
+        // window.location.href = 'detail.html';
       })
       .catch(error => {
         console.error('There was a problem with the fetch operation:', error);
