@@ -54,12 +54,12 @@ document.addEventListener('DOMContentLoaded', function() {
           <h2>Booking Details</h2>
           <p>Name: ${data.name}</p>
           <p>Email: ${data.email}</p>
-          <p>Check In: ${data.check_in}</p>
-          <p>Check Out: ${data.check_out}</p>
           <p>Adults: ${data.adults}</p>
           <p>Children: ${data.childern}</p>
           <p>Room: ${data.rooms}</p>
           <p>Type Room: ${data.type_room}</p>
+          <p>Check In: ${data.check_in}</p>
+          <p>Check Out: ${data.check_out}</p>
         `;
 
         // Display the booking details in the container
