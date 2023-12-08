@@ -53,7 +53,7 @@ const loadRoomList = () => {
                 <i class="fas fa-star"></i>
               </div>
               <p>
-                ${description}.
+                ${description}
               </p>
               <h5>From Rp. ${price.toLocaleString()}/night</h5>
               <a href="booking.html">
