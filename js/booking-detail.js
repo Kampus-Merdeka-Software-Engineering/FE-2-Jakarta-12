@@ -7,6 +7,20 @@ document.addEventListener('DOMContentLoaded', function() {
         // menampilkan data booking pada halaman HTML
         var bookingDetailsContainer = document.getElementById('bookingDetails')
         if (bookingDetailsContainer) {
+
+            function formatDateTime(dateTimeString) {
+                const options = {
+                    year: 'numeric',
+                    month: 'long',
+                    day: '2-digit',
+                    hour: 'numeric',
+                    minute: 'numeric',
+                    hour12: false,
+                    timeZone: 'Asia/Jakarta'
+                }
+                return new Date(dateTimeString).toLocaleDateString('en-US', options)
+            }
+
             var bookingDetailsHTML = `
             <div>
                 <h1>Booking Details</h1>
@@ -46,14 +60,14 @@ document.addEventListener('DOMContentLoaded', function() {
                 </tr>
                 <tr>
                     <td>Check-in</td>
-                    <td>: ${bookingDetails.check_in}</td>
+                    <td>: ${formatDateTime(bookingDetails.check_in)}</td>
                 </tr>
                 <tr>
                     <td>Check-out</td>
-                    <td>: ${bookingDetails.check_out}</td>
+                    <td>: ${formatDateTime(bookingDetails.check_out)}</td>
                 </tr>
             </table>
-            <a href="index.html" class="btn">Back to Main Page</a>
+            <a href="index.html" class="btn"><strong>Back to Main Page</strong></a>
             `
 
         // menampilkan detail booking di dalam container
