@@ -51,21 +51,31 @@ document.addEventListener('DOMContentLoaded', function() {
       .then(data => {
         // Process the API response 
         var bookingDetails = `
-          <h2>Booking Details</h2>
-          <p>Name: ${data.name}</p>
-          <p>Email: ${data.email}</p>
-          <p>Adults: ${data.adults}</p>
-          <p>Children: ${data.childern}</p>
-          <p>Room: ${data.rooms}</p>
-          <p>Type Room: ${data.type_room}</p>
-          <p>Check In: ${data.check_in}</p>
-          <p>Check Out: ${data.check_out}</p>
+        <h2>Booking Details</h2>
+        <div class="card">
+            <h3>Guest Information</h3>
+            <p><strong>Name: ${data.name}</strong></p>
+            <p><strong>Email: ${data.email}</strong></p>
+        </div>
+        <div class="card">
+            <h3>Reservation Details</h3>
+            <p><strong>Check-in: ${data.check_in}</strong></p>
+            <p><strong>Check-out: ${data.check_out}</strong></p>
+            <p><strong>Adults: ${data.adults}</strong></p>
+            <p><strong>Children: ${data.childern}</strong></p>
+            <p><strong>Rooms: ${data.rooms}</strong></p>
+            <p><strong>Room Type: ${data.type_room}</strong></p>
+        </div>
+        <h3 id="thankYouMessage">
+        Thank you for making a reservation at our hotel!
+        </h3>
+        <a  href="index.html" id="backToMain" class="btn">Back to Main Page</a>
         `;
 
         // Display the booking details in the container
         bookingDetailsContainer.innerHTML = bookingDetails;
 
-        // window.location.href = 'detail.html';
+        window.location.href = 'detail-booking.html';
       })
       .catch(error => {
         console.error('There was a problem with the fetch operation:', error);
