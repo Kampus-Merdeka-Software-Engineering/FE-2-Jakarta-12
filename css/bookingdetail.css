@@ -1,36 +1,40 @@
 /* bookingdetail.css */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Condiment&family=Dancing+Script&family=Glass+Antiqua&family=Great+Vibes&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Condiment&family=DM+Serif+Display&family=Dancing+Script&family=Glass+Antiqua&family=Great+Vibes&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Condiment&family=Dancing+Script&family=Glass+Antiqua&family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Condiment&family=DM+Serif+Display&family=Dancing+Script&family=Glass+Antiqua&family=Great+Vibes&display=swap');
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url("../image/bookingdetail.png");
+    background-image: url('../image/bookingdetail.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .heading {
-    font-family: "Condiment", cursive;
+    font-family: 'Condiment', cursive;
 }
 
 .btn {
-    font-family: "Poppins", cursive;
+    font-family: 'Poppins', cursive;
     display: block;
     margin: 20px auto;
     padding: 8px 15px; /* Adjusted padding to make the button smaller */
     font-size: 14px; /* Adjusted font size */
     color: #fff;
-    background-color: hsl(214, 57%, 51%);
+    background-color: #c3a05a;
     border: none;
-    border-radius: 5px;
+    border-radius: 11px;
     cursor: pointer;
     text-align: center; /* Center the text within the button */
-    width: 150px;
+    width: 110px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
 }
 
 html,
@@ -39,7 +43,7 @@ body {
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -135,8 +139,13 @@ header.sticky ul li a {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#bookingDetails h2 {
+#bookingDetails h1 {
     color: hsl(214, 57%, 51%);
+    text-align: center;
+    color: #333;
+    padding: 14px 2px 14px 2px;
+    background-color: #c3a05a;
+
 }
 
 #bookingDetails p {
