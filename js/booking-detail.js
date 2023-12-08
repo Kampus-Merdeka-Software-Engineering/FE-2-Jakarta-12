@@ -29,14 +29,6 @@ document.addEventListener("DOMContentLoaded", function() {
                     <td></td>
                 </tr>
                 <tr>
-                    <td>Check-in</td>
-                    <td>: ${bookingDetails.check_in}</td>
-                </tr>
-                <tr>
-                    <td>Check-out</td>
-                    <td>: ${bookingDetails.check_out}</td>
-                </tr>
-                <tr>
                     <td>Adults</td>
                     <td>: ${bookingDetails.adults} Adults</td>
                 </tr>
@@ -52,10 +44,18 @@ document.addEventListener("DOMContentLoaded", function() {
                     <td>Room Type</td>
                     <td>: ${bookingDetails.type_room}</td>
                 </tr>
+                <tr>
+                    <td>Check-in</td>
+                    <td>: ${bookingDetails.check_in}</td>
+                </tr>
+                <tr>
+                    <td>Check-out</td>
+                    <td>: ${bookingDetails.check_out}</td>
+                </tr>
             </table>
             <a href="index.html" class="btn">Back to Main Page</a>
-        </div>`
-        
+            </div>`
+
         // menampilkan detail booking di dalam container
         bookingDetailsContainer.innerHTML =bookingDetailsHTML
         } else {
