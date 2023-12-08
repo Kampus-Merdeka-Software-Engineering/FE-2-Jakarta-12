@@ -1,11 +1,11 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener('DOMContentLoaded', function() {
     // mengambil data pemesanan dari localstorage
-    var bookingDetailsData = localStorage.getItem("bookingDetails")
+    var bookingDetailsData = localStorage.getItem('bookingDetails')
     if (bookingDetailsData) {
         // parse data booking dari localstorage
         var bookingDetails = JSON.parse(bookingDetailsData)
         // menampilkan data booking pada halaman HTML
-        var bookingDetailsContainer = document.getElementById("bookingDetails")
+        var bookingDetailsContainer = document.getElementById('bookingDetails')
         if (bookingDetailsContainer) {
             var bookingDetailsHTML = `
             <div>
@@ -54,10 +54,10 @@ document.addEventListener("DOMContentLoaded", function() {
                 </tr>
             </table>
             <a href="index.html" class="btn">Back to Main Page</a>
-            </div>`
+            `
 
         // menampilkan detail booking di dalam container
-        bookingDetailsContainer.innerHTML =bookingDetailsHTML
+        bookingDetailsContainer.innerHTML = bookingDetailsHTML
         } else {
             console.error('booking details container not found')
         }
