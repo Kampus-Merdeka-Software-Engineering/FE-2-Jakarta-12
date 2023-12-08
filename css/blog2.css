@@ -170,21 +170,6 @@ header.sticky ul li a {
   isolation: isolate;
 }
 
-.about::before {
-  position: absolute;
-  content: '';
-  bottom: 0;
-  right: 0;
-  height: 75%;
-  width: 100%;
-  background-image: url('assets/about-bg.jpg');
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  opacity: 0.05;
-  z-index: -1;
-}
-
 .about__container {
   display: grid;
   gap: 4rem 2rem;
@@ -236,7 +221,7 @@ header.sticky ul li a {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 }
 
-.about__content .section__description {
+.about_content .section_description {
   margin-bottom: 2rem;
 }
 
@@ -244,7 +229,7 @@ header.sticky ul li a {
   padding-block: 5rem;
 }
 
-.packages__container :is(.section__subheader, .section__header) {
+.packages_container :is(.sectionsubheader, .section_header) {
   padding-inline: 1rem;
   text-align: center;
 }
@@ -261,7 +246,7 @@ header.sticky ul li a {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 }
 
-.packages__card__details {
+.packages_card_details {
   margin-inline: 1rem;
   padding: 1rem;
   display: flex;
@@ -274,7 +259,7 @@ header.sticky ul li a {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 }
 
-.packages__card__details h4 {
+.packages_card_details h4 {
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
   font-weight: 800;
@@ -282,17 +267,17 @@ header.sticky ul li a {
   color: var(--text-dark);
 }
 
-.packages__card__details p {
+.packages_card_details p {
   color: var(--text-light);
 }
 
-.packages__card__details h3 {
+.packages_card_details h3 {
   font-size: 1rem;
   font-weight: 600;
   color: var(--secondary-color);
 }
 
-.packages__card__details h3 span {
+.packages_card_details h3 span {
   font-size: 0.8rem;
 }
 
@@ -317,22 +302,16 @@ header.sticky ul li a {
   gap: 4rem 2rem;
 }
 
-.intro__container .section__subheader {
+.intro_container .section_subheader {
   color: var(--secondary-color);
 }
 
-.intro__container :is(.section__header, .section__description) {
+.intro_container :is(.sectionheader, .section_description) {
   margin-bottom: 1rem;
   color: var(--white);
 }
 
-.intro__video {
-  max-width: 450px;
-  margin: auto;
-  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
-}
-
-.feature__container :is(.section__subheader, .section__header) {
+.feature_container :is(.sectionsubheader, .section_header) {
   text-align: center;
 }
 
@@ -468,14 +447,14 @@ header.sticky ul li a {
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 }
 
-.news__card__title {
+.news_card_title {
   margin-bottom: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.news__card__title p {
+.news_card_title p {
   font-weight: 500;
   color: var(--text-light);
 }
@@ -573,7 +552,7 @@ header.sticky ul li a {
     cursor: pointer; /* Add a pointer cursor to indicate the logo is clickable */
   }
 
-  .scoial {
+  .social {
     margin-top: 20px;
   }
 
@@ -681,4 +660,16 @@ header.sticky ul li a {
   display: block;
   width: 100%;
   height: auto;
+}
+
+/* fek animasi untuk gambar */
+.image-container {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.image-container.fade-in {
+  opacity: 1;
+  transform: translateY(0);
 }
